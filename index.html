@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maycon Pinto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+
+    <nav id="desktop-nav">
+        <div class="logo">Maycon Pinto</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Maycon Pinto</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic1-1.png" 
+            alt="Foto de Perfil Maycon Pinto">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Oi, eu sou</p>
+            <h1 class="title">Maycon Pinto</h1>
+            <p class="section__text__p2">Desenvolvedor Frontend</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/Curriculo_Maycon_Pinto.pdf')"
+                >Download CV</button>
+            <!-- <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contato'">
+                Contato
+            </button> -->
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" 
+            alt="Meu linkedin" 
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/maycon-pinto/'">
+         
+            <img src="./assets/github.png" 
+            alt="Meu linkedin" 
+            class="icon" 
+            onclick="location.href='https://github.com/mayconaap/'">
+            </div>
+    </section>
+    <br>
+    <section id="about">
+        <div data-aos="fade-down">
+        <p class="section__text__p1"> Saiba Mais </p>
+        <h1 class="title"> Sobre Mim <h1>
+        </div>
+
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic1.png" 
+                    alt="profile picture" 
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                         <img src="./assets/experience.png" 
+                    alt="experience icon" 
+                    class="icon">
+                    <h3>Experiência</h3>
+                    <p> +4 anos  <br /> Engenheiro agrônomo </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon">
+                    <h3>Educação</h3>
+                    <p>Bacharel<br> Engenharia agrônoma </p>    
+                    </div>
+                    </div>
+
+                    <div class="text-container">
+                      <p> Sou um engenheiro agrônomo em transição de carreira para a empolgante 
+                        área de tecnologia. Ao longo dos meus anos como agrônomo, 
+                        adquiri uma ampla gama de habilidades, desde liderança de equipes até 
+                        marketing e aspectos comerciais.Embora minha experiência anterior não 
+                        esteja diretamente ligada ao desenvolvimento web, ela me proporcionou 
+                        uma sólida base em rotinas administrativas e uma capacidade natural de
+                        aprender novas ferramentas rapidamente.                        
+                        Uma das coisas que mais me motivam é trabalhar em equipe e inspirar as 
+                        pessoas ao meu redor. Estou sempre em busca de desafios que me permitam 
+                        crescer e contribuir de forma significativa para os projetos em que estou 
+                        envolvido.                        
+                        Minha paixão pela tecnologia é o que me impulsiona nessa jornada de
+                        transição. Cada dia é uma oportunidade para aprender, crescer 
+                        e aplicar meu conhecimento de maneira inovadora.                        
+                        Estou animado para explorar as possibilidades e contribuir com meu 
+                        entusiasmo, habilidades e determinação para o sucesso da equipe e dos 
+                        projetos em que estou envolvido.<br>               
+                        Vamos criar algo incrível juntos! </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./experience'">
+    </section>
+    <br>
+    <section id="experience">
+        <p class="section__text__p1"> Explore Minhas </p>
+        <h1 class="title"> Experiências </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Desenvolvimento Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> HTML </h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> CSS </h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> JavaScript </h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> Bootstrap </h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Experiência Adicional</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> Administrativo </h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> Liderança </h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> Comunicação </h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3> Melhoria de processos </h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+
+
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1"> Conheça meus </p>
+        <h1 class="title"> Projetos </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/em-breve2.png" 
+                    alt="project-1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> Relógio Digital </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Github 
+                    </button>
+                    
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Live Demo 
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/em-breve.png" 
+                    alt="project-2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> Em breve </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Github 
+                    </button>
+                    
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Live Demo 
+                    </button>
+                </div>
+            </div> 
+            
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/em-breve.png" 
+                    alt="project-3"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> Em breve </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Github 
+                    </button>
+                    
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/mayconaap/relogiodigital'">
+                     Live Demo 
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <img src="./assets/arrow.png" 
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1"> Entre em contato </p>
+        <h1 class="title"> Me contate </h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p> <a href="mailto:mayconaap@gmail.com"> mayconaap@gmail.com </a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="linkedin icon"
+                class="icon contact-icon">
+                <p> <a href="https://www.linkedin.com/in/maycon-pinto/"> LinkedIn.com </a></p>
+            </div>
+        </div>
+
+        </section>
+        
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; | 2024 Maycon Pinto | Todos os direitos reservados.</p>
+    </footer>
+   
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
