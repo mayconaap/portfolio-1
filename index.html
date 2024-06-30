@@ -6,14 +6,16 @@
     <title>Portfolio Maycon Pinto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
 </head>
 <body>
     
 
     <nav id="desktop-nav">
-        <div class="logo">Maycon Pinto</div>
+        <div class="logo efeito-nav">Maycon Pinto</div>
         <div>
-            <ul class="nav-links">
+            <ul class="nav-links efeito-nav1">
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#experience">Experiência</a></li>
                 <li><a href="#projects">Projetos</a></li>
@@ -41,23 +43,20 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic1-1.png" 
-            alt="Foto de Perfil Maycon Pinto">
-        </div>
-        <div class="section__text">
+            <img src="./assets/profile-pic1.png" 
+            alt="foto perfil maycon pinto" 
+            class="about-pic  anima-pic-profile">
+   
+        <div class="section__text  anima-text">
             <p class="section__text__p1">Oi, eu sou</p>
             <h1 class="title">Maycon Pinto</h1>
             <p class="section__text__p2">Desenvolvedor Frontend</p>
             <div class="btn-container">
                 <button
                 class="btn btn-color-2"
-                onclick="window.open('./assets/Curriculo_Maycon_Pinto.pdf')"
+                onclick="window.open('./assets/Curriculo-Maycon-Pinto.pdf')"
                 >Download CV</button>
-            <!-- <button
-                class="btn btn-color-1"
-                onclick="location.href='./#contato'">
-                Contato
-            </button> -->
+            
         </div>
         <div id="socials-container">
             <img src="./assets/linkedin.png" 
@@ -70,21 +69,27 @@
             class="icon" 
             onclick="location.href='https://github.com/mayconaap/'">
             </div>
+
+        <img src="./assets/arrow.png" 
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='./#about'">
+                   
     </section>
     <br>
     <section id="about">
-        <p class="section__text__p1"> Saiba Mais </p>
-        <h1 class="title"> Sobre Mim <h1>
+        <p class="section__text__p1 anima-text"> Saiba Mais </p>
+        <h1 class="title anima-text"> Sobre Mim <h1>
 
-            <div class="section-container">
-                <div class="section__pic-container" data-anime="left">
+            <div class="section-container anima-text">
+                <div class="section__pic-container">
                     <img src="./assets/about-pic1.png" 
-                    alt="profile picture" 
-                    class="about-pic">
+                    alt="foto preto e branco maycon pinto" 
+                    class="about-pic anima-pic-profile">
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
-                        <div class="details-container" data-anime="right">
+                        <div class="details-container">
                          <img src="./assets/experience.png" 
                     alt="experience icon" 
                     class="icon">
@@ -92,7 +97,7 @@
                     <p> +4 anos  <br /> Engenheiro agrônomo </p>
                     </div>
 
-                    <div class="details-container" data-anime="right">
+                    <div class="details-container">
                         <img src="./assets/education.png"
                         alt="Education icon"
                         class="icon">
@@ -101,11 +106,11 @@
                     </div>
                     </div>
 
-                    <div class="text-container">
+                    <div class="text-container anima-text">
                       <p> Sou um engenheiro agrônomo em transição de carreira para a empolgante 
                         área de tecnologia. Ao longo dos meus anos como agrônomo, 
                         adquiri uma ampla gama de habilidades, desde liderança de equipes até 
-                        marketing e aspectos comerciais.Embora minha experiência anterior não 
+                        marketing e aspectos comerciais. Embora minha experiência anterior não 
                         esteja diretamente ligada ao desenvolvimento web, ela me proporcionou 
                         uma sólida base em rotinas administrativas e uma capacidade natural de
                         aprender novas ferramentas rapidamente.                        
@@ -126,15 +131,15 @@
             <img src="./assets/arrow.png"
             alt="Arrow icon"
             class="icon arrow"
-            onclick="location.href='./experience'">
+            onclick="location.href='./#experience'">
     </section>
     <br>
     <section id="experience">
-        <p class="section__text__p1"> Explore Minhas </p>
-        <h1 class="title"> Experiências </h1>
+        <p class="section__text__p1 anima-text"> Explore Minhas </p>
+        <h1 class="title anima-text"> Experiências </h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container" data-anime="left">
+                <div class="details-container anima-experience1">
                     <h2 class="experience-sub-title"> Desenvolvimento Frontend</h2>
                     <div class="article-container">
                         <article>
@@ -171,7 +176,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="details-container" data-anime="right">
+                <div class="details-container anima-experience2">
                     <h2 class="experience-sub-title"> Experiência Adicional</h2>
                     <div class="article-container">
                         <article>
@@ -219,11 +224,11 @@
     </section>
 
     <section id="projects">
-        <p class="section__text__p1"> Conheça meus </p>
-        <h1 class="title"> Projetos </h1>
+        <p class="section__text__p1 anima-text"> Conheça meus </p>
+        <h1 class="title anima-text"> Projetos </h1>
         <div class="experience-details-container">
             <div class="about-containers">
-            <div class="details-container color-container" data-anime="left">
+            <div class="details-container color-container  anima-projeto1">
                 <div class="article-container">
                     <img src="./assets/em-breve2.png" 
                     alt="project-1"
@@ -243,7 +248,7 @@
                 </div>
             </div>
 
-            <div class="details-container color-container" data-anime="left">
+            <div class="details-container color-container  anima-projeto2">
                 <div class="article-container">
                     <img src="./assets/em-breve.png" 
                     alt="project-2"
@@ -263,7 +268,7 @@
                 </div>
             </div> 
             
-            <div class="details-container color-container" data-anime="left">
+            <div class="details-container color-container  anima-projeto3">
                 <div class="article-container">
                     <img src="./assets/em-breve.png" 
                     alt="project-3"
@@ -292,9 +297,9 @@
     </section>
 
     <section id="contact">
-        <p class="section__text__p1"> Entre em contato </p>
-        <h1 class="title"> Me contate </h1>
-        <div class="contact-info-upper-container">
+        <p class="section__text__p1 anima-text"> Entre em contato </p>
+        <h1 class="title anima-text"> Me contate </h1>
+        <div class="contact-info-upper-container anima-text">
             <div class="contact-info-container">
                 <img 
                 src="./assets/email.png" 
@@ -315,7 +320,7 @@
         
     <footer>
         <nav>
-            <div class="nav-links-container">
+            <div class="nav-links-container anima-text">
                 <ul class="nav-links">
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#experience">Experiência</a></li>
@@ -327,11 +332,6 @@
         <p>Copyright &#169; | 2024 Maycon Pinto | Todos os direitos reservados.</p>
     </footer>
    
-    <script src="script.js"></script>
-   
-
-</body>
-</html>
     <script src="script.js"></script>
    
 
